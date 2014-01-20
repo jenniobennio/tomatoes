@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		264A863D188D3ECD007B1301 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264A863C188D3ECD007B1301 /* Foundation.framework */; };
+		264A863F188D3ECD007B1301 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264A863E188D3ECD007B1301 /* CoreGraphics.framework */; };
+		264A8641188D3ECD007B1301 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264A8640188D3ECD007B1301 /* UIKit.framework */; };
+		264A8647188D3ECD007B1301 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 264A8645188D3ECD007B1301 /* InfoPlist.strings */; };
+		264A8649188D3ECD007B1301 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 264A8648188D3ECD007B1301 /* main.m */; };
+		264A864D188D3ECD007B1301 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 264A864C188D3ECD007B1301 /* AppDelegate.m */; };
+		264A8650188D3ECD007B1301 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 264A864E188D3ECD007B1301 /* Main_iPhone.storyboard */; };
+		264A8653188D3ECD007B1301 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 264A8651188D3ECD007B1301 /* Main_iPad.storyboard */; };
+		264A8656188D3ECD007B1301 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 264A8655188D3ECD007B1301 /* ViewController.m */; };
+		264A8658188D3ECD007B1301 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 264A8657188D3ECD007B1301 /* Images.xcassets */; };
+		264A865F188D3ECE007B1301 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264A865E188D3ECE007B1301 /* XCTest.framework */; };
+		264A8660188D3ECE007B1301 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264A863C188D3ECD007B1301 /* Foundation.framework */; };
+		264A8661188D3ECE007B1301 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264A8640188D3ECD007B1301 /* UIKit.framework */; };
+		264A8669188D3ECE007B1301 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 264A8667188D3ECE007B1301 /* InfoPlist.strings */; };
+		264A866B188D3ECE007B1301 /* tomatoesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 264A866A188D3ECE007B1301 /* tomatoesTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		264A8662188D3ECE007B1301 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 264A8631188D3ECD007B1301 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 264A8638188D3ECD007B1301;
+			remoteInfo = tomatoes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		264A8639188D3ECD007B1301 /* tomatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tomatoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		264A863C188D3ECD007B1301 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		264A863E188D3ECD007B1301 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		264A8640188D3ECD007B1301 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		264A8644188D3ECD007B1301 /* tomatoes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tomatoes-Info.plist"; sourceTree = "<group>"; };
+		264A8646188D3ECD007B1301 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		264A8648188D3ECD007B1301 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		264A864A188D3ECD007B1301 /* tomatoes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tomatoes-Prefix.pch"; sourceTree = "<group>"; };
+		264A864B188D3ECD007B1301 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		264A864C188D3ECD007B1301 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		264A864F188D3ECD007B1301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		264A8652188D3ECD007B1301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		264A8654188D3ECD007B1301 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		264A8655188D3ECD007B1301 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		264A8657188D3ECD007B1301 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		264A865D188D3ECE007B1301 /* tomatoesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tomatoesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		264A865E188D3ECE007B1301 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		264A8666188D3ECE007B1301 /* tomatoesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tomatoesTests-Info.plist"; sourceTree = "<group>"; };
+		264A8668188D3ECE007B1301 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		264A866A188D3ECE007B1301 /* tomatoesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tomatoesTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		264A8636188D3ECD007B1301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				264A863F188D3ECD007B1301 /* CoreGraphics.framework in Frameworks */,
+				264A8641188D3ECD007B1301 /* UIKit.framework in Frameworks */,
+				264A863D188D3ECD007B1301 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		264A865A188D3ECE007B1301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				264A865F188D3ECE007B1301 /* XCTest.framework in Frameworks */,
+				264A8661188D3ECE007B1301 /* UIKit.framework in Frameworks */,
+				264A8660188D3ECE007B1301 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		264A8630188D3ECD007B1301 = {
+			isa = PBXGroup;
+			children = (
+				264A8642188D3ECD007B1301 /* tomatoes */,
+				264A8664188D3ECE007B1301 /* tomatoesTests */,
+				264A863B188D3ECD007B1301 /* Frameworks */,
+				264A863A188D3ECD007B1301 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		264A863A188D3ECD007B1301 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				264A8639188D3ECD007B1301 /* tomatoes.app */,
+				264A865D188D3ECE007B1301 /* tomatoesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		264A863B188D3ECD007B1301 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				264A863C188D3ECD007B1301 /* Foundation.framework */,
+				264A863E188D3ECD007B1301 /* CoreGraphics.framework */,
+				264A8640188D3ECD007B1301 /* UIKit.framework */,
+				264A865E188D3ECE007B1301 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		264A8642188D3ECD007B1301 /* tomatoes */ = {
+			isa = PBXGroup;
+			children = (
+				264A864B188D3ECD007B1301 /* AppDelegate.h */,
+				264A864C188D3ECD007B1301 /* AppDelegate.m */,
+				264A864E188D3ECD007B1301 /* Main_iPhone.storyboard */,
+				264A8651188D3ECD007B1301 /* Main_iPad.storyboard */,
+				264A8654188D3ECD007B1301 /* ViewController.h */,
+				264A8655188D3ECD007B1301 /* ViewController.m */,
+				264A8657188D3ECD007B1301 /* Images.xcassets */,
+				264A8643188D3ECD007B1301 /* Supporting Files */,
+			);
+			path = tomatoes;
+			sourceTree = "<group>";
+		};
+		264A8643188D3ECD007B1301 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				264A8644188D3ECD007B1301 /* tomatoes-Info.plist */,
+				264A8645188D3ECD007B1301 /* InfoPlist.strings */,
+				264A8648188D3ECD007B1301 /* main.m */,
+				264A864A188D3ECD007B1301 /* tomatoes-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		264A8664188D3ECE007B1301 /* tomatoesTests */ = {
+			isa = PBXGroup;
+			children = (
+				264A866A188D3ECE007B1301 /* tomatoesTests.m */,
+				264A8665188D3ECE007B1301 /* Supporting Files */,
+			);
+			path = tomatoesTests;
+			sourceTree = "<group>";
+		};
+		264A8665188D3ECE007B1301 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				264A8666188D3ECE007B1301 /* tomatoesTests-Info.plist */,
+				264A8667188D3ECE007B1301 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		264A8638188D3ECD007B1301 /* tomatoes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 264A866E188D3ECE007B1301 /* Build configuration list for PBXNativeTarget "tomatoes" */;
+			buildPhases = (
+				264A8635188D3ECD007B1301 /* Sources */,
+				264A8636188D3ECD007B1301 /* Frameworks */,
+				264A8637188D3ECD007B1301 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tomatoes;
+			productName = tomatoes;
+			productReference = 264A8639188D3ECD007B1301 /* tomatoes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		264A865C188D3ECE007B1301 /* tomatoesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 264A8671188D3ECE007B1301 /* Build configuration list for PBXNativeTarget "tomatoesTests" */;
+			buildPhases = (
+				264A8659188D3ECE007B1301 /* Sources */,
+				264A865A188D3ECE007B1301 /* Frameworks */,
+				264A865B188D3ECE007B1301 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				264A8663188D3ECE007B1301 /* PBXTargetDependency */,
+			);
+			name = tomatoesTests;
+			productName = tomatoesTests;
+			productReference = 264A865D188D3ECE007B1301 /* tomatoesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		264A8631188D3ECD007B1301 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Jenny Kwan";
+				TargetAttributes = {
+					264A865C188D3ECE007B1301 = {
+						TestTargetID = 264A8638188D3ECD007B1301;
+					};
+				};
+			};
+			buildConfigurationList = 264A8634188D3ECD007B1301 /* Build configuration list for PBXProject "tomatoes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 264A8630188D3ECD007B1301;
+			productRefGroup = 264A863A188D3ECD007B1301 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				264A8638188D3ECD007B1301 /* tomatoes */,
+				264A865C188D3ECE007B1301 /* tomatoesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		264A8637188D3ECD007B1301 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				264A8653188D3ECD007B1301 /* Main_iPad.storyboard in Resources */,
+				264A8658188D3ECD007B1301 /* Images.xcassets in Resources */,
+				264A8650188D3ECD007B1301 /* Main_iPhone.storyboard in Resources */,
+				264A8647188D3ECD007B1301 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		264A865B188D3ECE007B1301 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				264A8669188D3ECE007B1301 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		264A8635188D3ECD007B1301 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				264A8656188D3ECD007B1301 /* ViewController.m in Sources */,
+				264A864D188D3ECD007B1301 /* AppDelegate.m in Sources */,
+				264A8649188D3ECD007B1301 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		264A8659188D3ECE007B1301 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				264A866B188D3ECE007B1301 /* tomatoesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		264A8663188D3ECE007B1301 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 264A8638188D3ECD007B1301 /* tomatoes */;
+			targetProxy = 264A8662188D3ECE007B1301 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		264A8645188D3ECD007B1301 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				264A8646188D3ECD007B1301 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		264A864E188D3ECD007B1301 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				264A864F188D3ECD007B1301 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		264A8651188D3ECD007B1301 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				264A8652188D3ECD007B1301 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		264A8667188D3ECE007B1301 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				264A8668188D3ECE007B1301 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		264A866C188D3ECE007B1301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		264A866D188D3ECE007B1301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		264A866F188D3ECE007B1301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tomatoes/tomatoes-Prefix.pch";
+				INFOPLIST_FILE = "tomatoes/tomatoes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		264A8670188D3ECE007B1301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tomatoes/tomatoes-Prefix.pch";
+				INFOPLIST_FILE = "tomatoes/tomatoes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		264A8672188D3ECE007B1301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/tomatoes.app/tomatoes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tomatoes/tomatoes-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "tomatoesTests/tomatoesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		264A8673188D3ECE007B1301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/tomatoes.app/tomatoes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tomatoes/tomatoes-Prefix.pch";
+				INFOPLIST_FILE = "tomatoesTests/tomatoesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		264A8634188D3ECD007B1301 /* Build configuration list for PBXProject "tomatoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				264A866C188D3ECE007B1301 /* Debug */,
+				264A866D188D3ECE007B1301 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		264A866E188D3ECE007B1301 /* Build configuration list for PBXNativeTarget "tomatoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				264A866F188D3ECE007B1301 /* Debug */,
+				264A8670188D3ECE007B1301 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		264A8671188D3ECE007B1301 /* Build configuration list for PBXNativeTarget "tomatoesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				264A8672188D3ECE007B1301 /* Debug */,
+				264A8673188D3ECE007B1301 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 264A8631188D3ECD007B1301 /* Project object */;
+}
