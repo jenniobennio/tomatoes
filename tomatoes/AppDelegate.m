@@ -7,11 +7,17 @@
 //
 
 #import "AppDelegate.h"
+#import "Reachability.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(checkNetworkStatus:) name:kReachabilityChangedNotification object:nil];
+    self.reachability = [Reachability reachabilityForInternetConnection];
+    [self.reachability startNotifier];
+    
     // Override point for customization after application launch.
     return YES;
 }
@@ -41,6 +47,14 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)checkNetworkStatus: (NSNotification *)notice {
+    
+    if ([self.reachability currentReachabilityStatus] == NotReachable)
+        NSLog(@"check network status: not reachable");
+    else
+        NSLog(@"check network status: reachable");
 }
 
 @end
